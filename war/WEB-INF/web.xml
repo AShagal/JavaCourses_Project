@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>courseServlet</servlet-name>
+    <servlet-class>com.epam.courses.server.serviceImpl.CourseServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>courseServlet</servlet-name>
+    <url-pattern>/gwtcourses/course</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>lecturerServlet</servlet-name>
+    <servlet-class>com.epam.courses.server.serviceImpl.LecturerServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>lecturerServlet</servlet-name>
+    <url-pattern>/gwtcourses/lecturer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>studentServlet</servlet-name>
+    <servlet-class>com.epam.courses.server.serviceImpl.StudentServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>studentServlet</servlet-name>
+    <url-pattern>/gwtcourses/student</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>studentCourseServlet</servlet-name>
+    <servlet-class>com.epam.courses.server.serviceImpl.StudentCourseServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>studentCourseServlet</servlet-name>
+    <url-pattern>/gwtcourses/studentcourse</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>registrationServlet</servlet-name>
+    <servlet-class>com.epam.courses.server.serviceImpl.RegistrationServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>registrationServlet</servlet-name>
+    <url-pattern>/gwtcourses/registration</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <servlet-name>adminServlet</servlet-name>
+    <servlet-class>com.epam.courses.server.serviceImpl.AdminServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>adminServlet</servlet-name>
+    <url-pattern>/gwtcourses/admin</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>userServlet</servlet-name>
+    <servlet-class>com.epam.courses.server.serviceImpl.UserServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>userServlet</servlet-name>
+    <url-pattern>/gwtcourses/user</url-pattern>
+  </servlet-mapping>
+ 
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>GwtCourses.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

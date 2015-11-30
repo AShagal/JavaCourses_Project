@@ -1,0 +1,4 @@
+username=root
+password=password
+url=jdbc:mysql://localhost:3306/electivecourses
+driver=com.mysql.jdbc.Driver
